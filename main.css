@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #6A46B0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    color: white;
+}
+.name{
+    font-size: 23px;
+    margin: 0 10px;
+}
+.start_search{
+    font-size: 23px;
+    padding: 1px 40px;
+    background-color: white;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 300px;
+    display: block;
+}
+.card{
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+    width: 320px;
+    height: 550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: relative;
+}
+#main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.price{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 80px;
+}
+.plus{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -40px;
+}
+.caloricity{
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+}
+@media only screen and (max-width: 575px){
+    .logo{
+        font-size: 50px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .search{
+        flex-direction: column;
+    }
+    .name{
+        margin: 10px 0;
+    }
+}
